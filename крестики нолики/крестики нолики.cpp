@@ -120,6 +120,43 @@ int main()
             break;
 
         }
+
+        if (a1 and a2 and a3 == 'x') //Проверка победы первого игрока 1;
+        {
+            cout << "Победил игрок 1!";
+            break;
+        }
+        else if (b1 and b2 and b3 == 'x')
+        {
+            cout << "Победил игрок 1!";
+            break;
+        }
+        else if (c1 and c2 and c3 == 'x')
+        {
+            cout << "Победил игрок 1!";
+            break;
+        }
+        else if (c1 and c2 and c3 == 'x')
+        {
+            cout << "Победил игрок 1!";
+            break;
+        }
+        else if (c1 and c2 and c3 == 'x')
+        {
+            cout << "Победил игрок 1!";
+            break;
+        }
+        else if (a1 and b2 and c3 == 'x')
+        {
+            cout << "Победил игрок 1!";
+            break;
+        }
+        else if (c1 and b2 and a3 == 'x')
+        {
+            cout << "Победил игрок 1!";
+            break;
+        }
+
         pl2:
         cout << "Ходит игрок 2: ";
         cin >> input; //Ход игрока 2
@@ -218,6 +255,47 @@ int main()
         default:
             cout << "Ошибка! Нет такого поля!" << endl;
             goto pl2;
+            break;
+        }
+
+        if (a1 and a2 and a3 == 'o') //Проверка победы первого игрока 2;
+        {
+            cout << "Победил игрок 2!";
+            break;
+        }
+        else if (b1 and b2 and b3 == 'o')
+        {
+            cout << "Победил игрок 2!";
+            break;
+        }
+        else if (c1 and c2 and c3 == 'o')
+        {
+            cout << "Победил игрок 2!";
+            break;
+        }
+        else if (c1 and c2 and c3 == 'o')
+        {
+            cout << "Победил игрок 2!";
+            break;
+        }
+        else if (c1 and c2 and c3 == 'o')
+        {
+            cout << "Победил игрок 2!";
+            break;
+        }
+        else if (a1 and b2 and c3 == 'o')
+        {
+            cout << "Победил игрок 2!";
+            break;
+        }
+        else if (c1 and b2 and a3 == 'o')
+        {
+            cout << "Победил игрок 2!";
+            break;
+        }
+        if (a1 and a2 and a3 and b1 and b2 and b3 and c1 and c2 and c3 != '-')
+        {
+            cout << "Ничья!";
             break;
         }
     }
