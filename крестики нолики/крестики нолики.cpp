@@ -18,6 +18,7 @@ int main()
 
     while (true)
     {
+        pl1:
         cout << "Ходит игрок 1: ";
         int input = 0;
         cin >> input; //Ход игрока 1
@@ -31,6 +32,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 2:
             if (a2 == '-')
@@ -40,6 +42,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 3:
             if (a3 == '-')
@@ -49,6 +52,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 4:
             if (b1 == '-')
@@ -58,6 +62,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 5:
             if (b2 == '-')
@@ -67,6 +72,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 6:
             if (b3 == '-')
@@ -76,6 +82,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 7:
             if (c1 == '-')
@@ -85,6 +92,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 8:
             if (c2 == '-')
@@ -94,6 +102,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         case 9:
             if (c3 == '-')
@@ -103,13 +112,15 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl1;
             break;
         default:
             cout << "Ошибка! Нет такого поля!" << endl;
+            goto pl1;
             break;
 
         }
-
+        pl2:
         cout << "Ходит игрок 2: ";
         cin >> input; //Ход игрока 2
         switch (input)
@@ -122,6 +133,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 2:
             if (a2 == '-')
@@ -131,6 +143,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 3:
             if (a3 == '-')
@@ -140,6 +153,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 4:
             if (b1 == '-')
@@ -149,6 +163,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 5:
             if (b2 == '-')
@@ -158,6 +173,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 6:
             if (b3 == '-')
@@ -167,6 +183,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 7:
             if (c1 == '-')
@@ -176,6 +193,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 8:
             if (c2 == '-')
@@ -185,6 +203,7 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         case 9:
             if (c3 == '-')
@@ -194,9 +213,11 @@ int main()
                 break;
             }
             else cout << "Ошибка! Это поле заполнено!" << endl;
+            goto pl2;
             break;
         default:
             cout << "Ошибка! Нет такого поля!" << endl;
+            goto pl2;
             break;
         }
     }
